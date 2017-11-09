@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <style>
+     ul.colour-picker li {
+				position: relative;
+				display: block;
+				float: left;
+				height: 54px;
+				width: 25%;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			ul.colour-picker li[data-colour="teal"] {
+				background: #2B9;
+			}
+			ul.colour-picker li[data-colour="green"] {
+				background: #3C7;
+			}
+			ul.colour-picker li[data-colour="yellow"] {
+				background: #EC1;
+			}
+			ul.colour-picker li[data-colour="orange"] {
+				background: #E82;
+			}
+			ul.colour-picker li[data-colour="red"] {
+				background: #E54;
+			}
+			ul.colour-picker li[data-colour="blue"] {
+				background: #39D;
+			}
+			ul.colour-picker li[data-colour="dark-blue"] {
+				background: #345;
+			}
+			ul.colour-picker li[data-colour="white"] {
+				background: #FFF;
+			}
+			ul.colour-picker li.active:before {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background: rgba(0,0,0,0.1);
+				content: "";
+			}
+        #titulo{
+           font-family: Brush Script MT, arial, serif;
+            font-size:14pt;
+            font-style:bold; 
+            font-size: 38px;
+        }
+           h3{
+           font-family: Trebuchet MS, arial, serif;
+        }
+        .texto{
+            
+            font-family: Trebuchet MS, arial, serif;
+            font-size:14pt;
+            font-style:bold; 
+            font-size: 24px;
+        }
+        .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+			@-webkit-keyframes pulse {
+				0% {
+					background-color: #CCC;
+				}
+				25% {
+					background-color: #EEE;
+				}
+				50% {
+					background-color: #CCC;
+				}
+				75% {
+					background-color: #EEE;
+				}
+				100% {
+					background-color: #CCC;
+				}
+			}
+			.scroll-page .loading {
+				margin: 12px auto;
+				border: 8px solid #AAA;
+				height: 16px;
+				width: 16px;
+				background: #CCC;
+				border-radius: 16px;
+				-webkit-animation: pulse 2s ease-in-out 0s infinite;
+			}
+    </style>
+  </head>
+
+  <body>
+      
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title" id="titulo">Cocina.ME</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+            <div class="app-button texto" data-target="Almuerzo/cena">Almuerzo/cena</div>
+        </div>
+          <div class="app-section">
+            <div class="app-button texto" data-target="Desayuno/Merienda">Desayuno/Merienda</div>
+        </div>
+          
+    <div class="app-page" data-page="Almuerzo/cena">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Almuerzo/cena</div>
+      </div>
+    <div class="app-content">
+				<ul class="app-list">
+					<label>(Proteínas, Recuperación, Crecimiento de Musculo)</label>
+					<li class="app-button" data-target="Receta1">Huevo vegetariano en una sartén</li>
+				    <li class="app-button" data-target="Receta2">Casserola de Coliflor y Broccoli</li>
+				    <li class="app-button" data-target="Receta3">Ensalada Chef Premium</li>
+                    <li class="app-button" data-target="Receta4">Ricota con huevos revueltos</li>
+                    <li class="app-button" data-target="Receta5">Carne con Zucchini crocante</li>
+                    <li class="app-button" data-target="Receta6">Ensalada de Poroto y Carne</li>
+					<label>Label 2</label>
+					<li>Item 4</li>
+					<li>Item 5</li>
+					<li>Item 6</li>
+					<label>Label 3</label>
+					<li>Item 7</li>
+					<li>Item 8</li>
+					<li>Item 9</li>
+					<label>Label 4</label>
+					<li>Item 10</li>
+					<li>Item 11</li>
+					<li>Item 12</li>
+					<label>Label 5</label>
+					<li>Item 13</li>
+					<li>Item 14</li>
+					<li>Item 15</li>
+				</ul>
+			</div>
+    </div>
+        
+		</div>
+ <div class="app-page " data-page="Receta1">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Huevo vegetariano en una sartén</div>
+      </div>
+      <div class="app-content ">
+        <img src="Receta1.png" alt="Smiley face" height="200" width="300">
+          <ul class="app-list">
+<label>Ingredientes</label>
+<li>2 huevos</li>
+<li>1.5 cucharadas de Manteca</li>
+<li>75g coliflor</li>
+<li>50g choclo en lata</li>
+<li>1 zanahoria</li>
+<li>4 cucharadas de semillas chías (o sésamo)</li>
+<li>4 cucharadas de semillas de sésamo negras</li>
+<li>Salsa picante, sal, pimienta para sazonar</li>
+<label>Preparacion</label>
+<li>Cocinar en una sartén el coliflor con la zanahoria, choclo y manteca</li>
+<li>Agregar huevos y las semillas de sésamo, sazonar con sal y pimienta</li>
+          </ul>
+        </div>
+</div>
+         <div class="app-page " data-page="Receta2">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Casserola de Coliflor y Broccoli</div>
+      </div>
+      <div class="app-content ">
+        <img src="Receta2.png" alt="Smiley face" height="200" width="300">
+          <ul class="app-list">
+<label>Ingredientes</label>
+<li></li>
+              <li>200g Coliflor</li>
+              <li>200g Brócoli</li>
+              <li>200g Ricota</li>
+              <li>½ Cucharada Nuez moscada</li>
+              <li>½ Cucharada Tomillo</li>
+              <li>100ml Agua</li>
+              <li>30g Queso rallado</li>
+              <li>1 Cucharada Aceite</li>
+              <li>Sal, pimienta para sazonar</li>
+              <label>Preparacion</label>
+              <li>Colocar brócoli y coliflor en la olla</li>
+                <li>Mezclar ricota, nuez moscada, agua, romero para hacer una salsa, sazonar con sal y pimienta</li>
+                <li>Verter salsa en los vegetales, cocinar por aprox30 min, esparcir queso rallado al poner en el plato</li>
+          </ul>
+             </div>
+</div>
+           <div class="app-page " data-page="Receta3">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Casserola de Coliflor y Broccoli</div>
+      </div>
+      <div class="app-content ">
+        <img src="Receta3.png" alt="Smiley face" height="200" width="300">
+          <ul class="app-list">
+<label>Ingredientes</label>
+<li>2 Huevos cocidos</li>
+              <li>40g Cebolla en pickles</li>
+              <li>40g Pepinillos en pickles</li>
+              <li>80g Jamón Cocido</li>
+              <li>20g Queso Parmesan</li>
+              <li>50g Rucula</li>
+              <li>½ Limon (jugo)</li>
+              <li>2 Cucharadas aceite de oliva</li>
+              <li>Pimienta para sazonar</li>
+              <label>Preparacion</label>
+              <li>Cortar las verduras en rodajas, mezclar toda la ensalada.</li>
+                <li>Agregarle los huevos cortados por la mitad</li>
+          </ul>
+             </div>
+</div>
+         <div class="app-page " data-page="Receta4">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Ricota con huevos revueltos </div>
+      </div>
+      <div class="app-content ">
+        <img src="Receta4.png" alt="Smiley face" height="200" width="300">
+          <ul class="app-list">
+<label>Ingredientes</label>
+<li>3 Huevos</li>
+              <li>100g Ricota</li>
+              <li>1 Tomate picado</li>
+              <li>40g Espinaca</li>
+              <li>1 Cucharada aceite</li>
+              <li>Nuez moscada, Sal, Pimienta para sazonar</li>
+              <label>Preparacion</label>
+              <li>Cocinar Espinaca y tomate en una sartén hasta que se Ablande la espinaca</li>
+                <li>Romper los huevos arriba y cocinar hasta deseada consistencia</li>
+                <li>Esparcir ricota encima de los huevos,  dejar hasta que caliente y servir</li>
+          </ul>
+             </div>
+</div>
+           <div class="app-page " data-page="Receta5">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Carne con Zucchini crocante </div>
+      </div>
+      <div class="app-content ">
+        <img src="Receta5.png" alt="Smiley face" height="200" width="300">
+          <ul class="app-list">
+<label>Ingredientes</label>
+<li>200g Carne</li>
+              <li>1 Zucchini</li>
+              <li>1 Cebolla de Verdeo</li>
+              <li>20g Maní sin sal</li>
+              <li>1 Diente de ajo</li>
+              <li>5g Jengibre</li>
+                    <li>½ Chili picante</li>
+                    <li>½ Limón (jugo)</li>
+                    <li>1 Cucharada Salsa de Soja</li>
+              <li>2 Cucharadas de Miel</li>
+              <label>Preparacion</label>
+              <li>Cocinar carne con sus jugos, a la mitad de la cocción agregar Jengibre, Chili picante, limón, salsa de soja, miel, ajo, terminar de cocinar la carne</li>
+                <li>Agregar Zucchini, Cebolla de verdeo a la cocción, cocinar por 5 minutos aprox</li>
+                <li>Servir y agregar maní picado arriba</li>
+          </ul>
+             </div>
+</div>
+             <div class="app-page " data-page="Receta6">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Ensalada de Poroto y Carne </div>
+      </div>
+      <div class="app-content ">
+        <img src="Receta6.png" alt="Smiley face" height="200" width="300">
+          <ul class="app-list">
+<label>Ingredientes</label>
+<li>150g Carne</li>
+              <li>50g Porotos blancos</li>
+              <li>1 Pimentón</li>
+              <li>1  Tallo de Apio</li>
+              <li>20g Queso rallado</li>
+              <li>1 Cucharada Tomillo o hierbas italianas</li>
+                    <li>1 Cucharada aceite</li>
+                    <li>1 Cucharada vinagre balsámico</li>
+                    <li>Chili picante, Sal, Pimienta para sazonar</li>
+              <label>Preparacion</label>
+              <li>Cocinar carne cortada en tiras con aceite</li>
+                <li>Picar Apio finamente y el Pimentón</li>
+                <li>Cocinar todo junto con la carne, condimentar Tomillo o hierbas italianas y vinagre balsámico</li>
+              <li>Servir y espolvorear con queso rallado</li>
+          </ul>
+             </div>
+</div>
+
+    <div class="app-page" data-page="Desayuno/Merienda">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page 3</div>
+      </div>
+      <div class="app-content">
+        Page 3 is lonely
+      </div>
+    </div>
+
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+      });
+
+      App.controller('page2', function (page) {
+        // put stuff here
+      });
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+      </div>
+  </body>
+</html>
