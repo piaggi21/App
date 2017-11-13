@@ -9,7 +9,13 @@
 
   <name>Cocina.Me</name>
 
-    <icon src="icon.png" platform="android" qualifier="ldpi" />
+<icon src="icon.png" platform="android" qualifier="ldpi" />
+<icon src="icon.png" platform="android" qualifier="mdpi" />
+<icon src="icon.png" platform="android" qualifier="hdpi" />
+<icon src="icon.png" platform="android" qualifier="xhdpi" />
+<icon src="icon.png" platform="android" qualifier="xxhdpi" />
+<icon src="icon.png" platform="android" qualifier="xxxhdpi" />
+<icon src="icon.png" platform="android" qualifier="fr-xxhdpi" />
     
   <description>
       Catalogo de Recetas de comidas saludables
