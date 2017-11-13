@@ -6,7 +6,6 @@
     version     = "1.0.1" >
 
 <!-- versionCode is optional and Android only -->
-    <icon src="icon.png" />
   <name>Cocina.Me</name>
     
 
