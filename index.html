@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>My App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="app.min.css">
@@ -45,6 +46,17 @@
 				background: rgba(0,0,0,0.1);
 				content: "";
 			}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+            
+            
+        }
         #titulo{
            font-family: Brush Script MT, arial, serif;
             font-size:14pt;
@@ -103,10 +115,10 @@
       </div>
       <div class="app-content">
         <div class="app-section">
-            <div class="app-button texto" data-target="Almuerzo/cena">Almuerzo/cena</div>
+            <div class="app-button"data-target="Almuerzo/cena">Almuerzo/cena</div>
         </div>
           <div class="app-section">
-            <div class="app-button texto" data-target="Desayuno/Merienda">Desayuno/Merienda</div>
+            <div class="app-button" data-target="Desayuno/Merienda">Desayuno/Merienda</div>
         </div>
           
     <div class="app-page" data-page="Almuerzo/cena">
