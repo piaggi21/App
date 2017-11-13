@@ -20,9 +20,7 @@
       Pablo Andres Piaggi
   </author>
 
-</widget> 
-    
-<platform name="android">
+    <platform name="android">
   <icon src="icon.png" width="180" height="180" />
 </platform>
          <icon src="icon.png" />
@@ -35,3 +33,4 @@
 <icon src="icon.png" platform="android" qualifier="xxxhdpi" />
 <icon src="icon.png" platform="android" qualifier="fr-xxhdpi" />
 
+</widget> 
