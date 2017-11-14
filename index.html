@@ -64,6 +64,17 @@
 	position:relative;
 	top:1px;
 }
+        .div-wrapper {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.div-wrapper img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
         div{
             font-family: Font2;
             font-style: italic;
@@ -100,6 +111,23 @@
 					background-color: #CCC;
 				}
 			}
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
 			.scroll-page .loading {
 				margin: 12px auto;
 				border: 8px solid #AAA;
@@ -109,6 +137,9 @@
 				border-radius: 16px;
 				-webkit-animation: pulse 2s ease-in-out 0s infinite;
 			}
+        .frutas{
+            vertical-align: bottom;
+        }
     </style>
   </head>
 
@@ -119,13 +150,16 @@
         <div class="app-title" id="titulo">Cocina.ME</div>
       </div>
       <div class="app-content">
+          <div id="bg">
+  <img src="Fondo.png" alt="">
+</div>
         <div class="app-section animated fadeInDown">
             <div class="app-button"data-target="Almuerzo/cena">Almuerzo/cena</div>
         </div>
           <div class="app-section animated fadeInDown">
             <div class="app-button" data-target="Desayuno/Merienda">Desayuno/Merienda</div>
         </div>
-          
+      
     <div class="app-page" data-page="Almuerzo/cena">
       <div class="app-topbar">
         <div class="app-button left" data-back data-autotitle></div>
@@ -1601,6 +1635,7 @@ Cilantro, Sal, Pimienta para condimentar
    
       </div>
 </div>
+      
         </div>
              
     <script src="zepto.js"></script>
