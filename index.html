@@ -4,6 +4,7 @@
     <title>My App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="app.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
      ul.colour-picker li {
 				position: relative;
@@ -52,10 +53,6 @@
 	position:relative;
 	top:1px;
 }
-
-            
-            
-        }
         #titulo{
            font-family: Brush Script MT, arial, serif;
             font-size:14pt;
@@ -64,13 +61,6 @@
         }
            h3{
            font-family: Trebuchet MS, arial, serif;
-        }
-        .texto{
-            
-            font-family: Trebuchet MS, arial, serif;
-            font-size:14pt;
-            font-style:bold; 
-            font-size: 24px;
         }
         .center {
     margin: auto;
@@ -196,21 +186,46 @@
         <div class="app-title">Desayuno</div>
       </div>
     <div class="app-content">
-				<ul class="app-list">
+				 <div class="app-section">
+                        <ul class="app-list">
 					<label>(Proteínas, Recuperación, Crecimiento de Musculo)</label>
 					<li class="app-button" data-target="RecetaD1">Yogurt con manzana y nuez</li>
+                     </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 					<label>(Proteínas, Crecimiento de musculo, Saciedad)</label>
                     <li class="app-button" data-target="RecetaD2">Yogurt con miel</li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 					<label>Buenos Carbohidratos, Energía, No Antojos</label>
                     <li class="app-button" data-target="RecetaD3">Avena con mantequilla de maní</li>
                     <li class="app-button" data-target="RecetaD4">Avena con salsa de manzana</li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 					<label>(Buenos Carbohidratos, Energía, Sin antojos)</label>
 				    <li class="app-button" data-target="RecetaD5">Avena Snickers</li>
 				    <li class="app-button" data-target="RecetaD6">Avena con pasas y manzana</li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 					<label>(Proteínas, Carbohidratos, Energía, Crecimiento de musculo)</label>
 				    <li class="app-button" data-target="RecetaD7">Banana con yogurt </li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
                     <label>(Proteínas, Carbohidratos, Energía, Crecimiento de musculo)</label>
                     <li class="app-button" data-target="RecetaD8">Batido de banana</li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
                     <label>(Buenos Carbohidratos, Bajo en grasas, Energía, Sin antojos)</label>
 				    <li class="app-button" data-target="RecetaD9">Avena dulce con Yogurt</li>
                     <li class="app-button" data-target="RecetaD10">Avena con naranja y manzana</li>
@@ -223,16 +238,29 @@
         <div class="app-title">Merienda</div>
       </div>
     <div class="app-content">
-				<ul class="app-list">
+			<div class="app-section">
+                        <ul class="app-list">
 					<label>(Proteínas, Recuperación, Crecimiento de Musculo)</label>
 					<li class="app-button" data-target="RecetaM1">Yogurt con manzana y nuez</li>
+                </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 					<label>(Proteínas, Crecimiento de musculo, Saciedad)</label>
                     <li class="app-button" data-target="RecetaM2">Yogurt con miel</li>
                     <li class="app-button" data-target="RecetaM3">Batido de proteínas de arándano</li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 					<label>(Buenos Carbohidratos, Energía, Sin antojos)</label>
 				    <li class="app-button" data-target="RecetaM4">Avena Snickers</li>
 				    <li class="app-button" data-target="RecetaM5">Avena con pasas y manzana</li>
                     <li class="app-button" data-target="RecetaM6">Uvas con Yogurt </li>
+            </ul>
+        </div>
+        <div class="app-section">
+                        <ul class="app-list">
 				    <label>(Proteínas, Carbohidratos, Energía, Crecimiento de musculo)</label>
                     <li class="app-button" data-target="RecetaM7">Batido de banana</li>
 				</ul>
@@ -246,8 +274,11 @@
         <div class="app-title">Huevo vegetariano en una sartén</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta1.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+  <div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
 <li>2 huevos</li>
 <li>1.5 cucharadas de Manteca</li>
@@ -258,6 +289,7 @@
 <li>4 cucharadas de semillas de sésamo negras</li>
 <li>Salsa picante, sal, pimienta para sazonar</li>
 </ul>
+</div>
           <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cocinar en una sartén el coliflor con la zanahoria, choclo y manteca<br>
@@ -271,8 +303,11 @@
         <div class="app-title">Casserola de Coliflor y Broccoli</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta2.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
 <li></li>
               <li>200g Coliflor</li>
@@ -285,6 +320,7 @@
               <li>1 Cucharada Aceite</li>
               <li>Sal, pimienta para sazonar</li>
           </ul>
+          </div>
              <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Colocar brócoli y coliflor en la olla<br>
@@ -301,8 +337,11 @@
         <div class="app-title">Casserola de Coliflor y Broccoli</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta3.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+ <div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
 <li>2 Huevos cocidos</li>
               <li>40g Cebolla en pickles</li>
@@ -314,6 +353,7 @@
               <li>2 Cucharadas aceite de oliva</li>
               <li>Pimienta para sazonar</li>
           </ul>
+          </div>
                      <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar las verduras en rodajas, mezclar toda la ensalada.<br>
@@ -330,8 +370,11 @@
         <div class="app-title">Ricota con huevos revueltos </div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta4.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
 <li>3 Huevos</li>
               <li>100g Ricota</li>
@@ -340,6 +383,7 @@
               <li>1 Cucharada aceite</li>
               <li>Nuez moscada, Sal, Pimienta para sazonar</li>
           </ul>
+          </div>
            <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cocinar Espinaca y tomate en una sartén hasta que se Ablande la espinaca<br>
@@ -354,8 +398,11 @@
         <div class="app-title">Carne con Zucchini crocante </div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta5.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
 <li>200g Carne</li>
               <li>1 Zucchini</li>
@@ -368,6 +415,7 @@
                     <li>1 Cucharada Salsa de Soja</li>
               <li>2 Cucharadas de Miel</li>
           </ul>
+          </div>
            <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cocinar carne con sus jugos, a la mitad de la cocción agregar Jengibre, Chili picante, limón, salsa de soja, miel, ajo, terminar de cocinar la carne<br>
@@ -383,8 +431,11 @@
         <div class="app-title">Ensalada de Poroto y Carne </div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta6.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
 <li>150g Carne</li>
               <li>50g Porotos blancos</li>
@@ -396,6 +447,7 @@
                     <li>1 Cucharada vinagre balsámico</li>
                     <li>Chili picante, Sal, Pimienta para sazonar</li>
           </ul>
+          </div>
            <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cocinar carne cortada en tiras con aceite<br>
@@ -411,8 +463,11 @@
         <div class="app-title">Pollo Caprese</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta7.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
               <li>125g de pollo</li>
               <li>100g Mozzarella bajo en grasa</li>
@@ -421,6 +476,7 @@
               <li>4 cucharadas de Aceite de oliva</li>
               <li>3 cucharadas de Vinagre balsámico</li>
           </ul>
+          </div>
              <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Precalentar horno a 200°c<br>
@@ -436,8 +492,11 @@
         <div class="app-title">Pollo picante con Brócoli</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta8.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
               <li>200g Pollo</li>
               <li>300g Brócoli</li>
@@ -445,6 +504,7 @@
               <li>4 Cucharadas de Aceite de oliva</li>
               <li>Sal, Pimienta para sazonar</li>
           </ul>
+          </div>
           <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Hervir agua y cocinar brócoli por aprox 5 minutos<br>
@@ -460,8 +520,11 @@
         <div class="app-title">Yogurt con manzana y nuez</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta9.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
               <li>200g yogurt</li>
               <li>1 Cucharadas semillas de lino/sésamo</li>
@@ -471,6 +534,7 @@
               <label>Preparacion</label>
               <li>Mezclar todo junto</li>
           </ul>
+          </div>
              </div>
 </div>
     <div class="app-page " data-page="RecetaM1">
@@ -479,8 +543,11 @@
         <div class="app-title">Yogurt con manzana y nuez</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta9.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
 <label>Ingredientes</label>
               <li>150g yogurt</li>
               <li>1 Cucharadas semillas de lino/sésamo</li>
@@ -490,6 +557,7 @@
               <label>Preparacion</label>
               <li>Mezclar todo junto</li>
           </ul>
+          </div>
              </div>
 </div>    
     <div class="app-page " data-page="Receta10">
@@ -498,8 +566,11 @@
         <div class="app-title">Pollo a la Mostaza Dijon y Naranja</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta10.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  150g Pollo
@@ -523,6 +594,7 @@
               Perejil, Chili picante, Sal, pimienta para sazonar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar pollo en tiras. mezclar Mostaza, Jugo de naranja, ajo, sazonar con sal y pimienta, y marinar con el pollo, cocinar por 30 minutos<br>
@@ -537,8 +609,11 @@
         <div class="app-title">Porotos con salsa cremosa</div>
       </div>
       <div class="app-content ">
-        <img src="Recet11.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+            <div class="app-section">
+        <img src="Receta11.png" alt="Smiley face" height="200" width="300">
+          </div>
+    <div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  150g porotos blancos
@@ -559,6 +634,7 @@
               Perejil
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Procesar garbanzos y ricota con una pizca de sal hasta quedar uniforme<br>
@@ -572,8 +648,11 @@
         <div class="app-title">Pollo al limón con Hierbas</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta12.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                 200g Pollo 
@@ -603,6 +682,7 @@
               Sal, pimienta para sazonar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
                      1)	Precalentar horno a 200°c<br>
@@ -617,8 +697,11 @@
         <div class="app-title">Carne con verduras asadas</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta13.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  250g Carne
@@ -645,6 +728,7 @@
               Chili picante, sal, pimienta para sazonar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	En una sartén calentar aceite, y cocinar carne<br>
@@ -660,8 +744,11 @@
         <div class="app-title">Yogurt con miel</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD2.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  400g yogurt
@@ -673,6 +760,7 @@
               4 Cucharadas de agua
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Mezclar todo en una taza
@@ -685,8 +773,11 @@
         <div class="app-title">Yogurt con miel</div>
       </div>
       <div class="app-content ">
-        <img src="RecetaD2.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+            <div class="app-section">
+                <img src="RecetaD2.png" alt="Smiley face" height="200" width="300">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
                   <li>
                  300g yogurt
@@ -698,6 +789,7 @@
               3 Cucharadas de agua
               </li>
           </ul>
+          </div>
                   <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Mezclar todo en una taza
@@ -710,8 +802,11 @@
         <div class="app-title">Batido de proteínas de arándano</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaM3.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  350g yogurt
@@ -726,6 +821,7 @@
               350ml agua
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Procesar todo en una licuadora
@@ -738,8 +834,11 @@
         <div class="app-title">Avena con mantequilla de maní</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD3.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                 40g Avena 
@@ -760,6 +859,7 @@
               1 Cucharada de miel
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Combinar todos los ingredientes menos la miel y banana, dejar reposar por 15 min en la heladera<br>
@@ -773,8 +873,11 @@
         <div class="app-title">Avena con salsa de manzana</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD4.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  60g Avena
@@ -795,6 +898,7 @@
               ½ Cucharadas de canela
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
                      1)	Tostar las almendras hasta dorar<br>
@@ -808,8 +912,11 @@
         <div class="app-title">Curry de Pollo con vegetales</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta14.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  150g Pollo
@@ -842,6 +949,7 @@
               Sal, pimienta para condimentar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar pollo en tiras, y las puerro, coliflor, cebolla en rebanadas<br>
@@ -856,8 +964,11 @@
         <div class="app-title">Chili con carne</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta15.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                 200g carne 
@@ -893,6 +1004,7 @@
 Cilantro, Sal, Pimienta para condimentar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cocinar con aceite cebollas, ajo, zanahorias, jengibre y chili picante por aprox 2 minutos<br>
@@ -908,8 +1020,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Avena Snickers</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD5.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  50g avena
@@ -933,6 +1048,7 @@ Cilantro, Sal, Pimienta para condimentar
               200g yogurt
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	En una olla calentar la leche con la pizca de sal, agregar avena y cacao, dejar cocinar por 15 minutos, revolver ocasionalmente<br>
@@ -946,8 +1062,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Avena con pasas y manzana</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD6.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  40g avena
@@ -968,6 +1087,7 @@ Cilantro, Sal, Pimienta para condimentar
               100ml leche
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar la manzana en cubos, quitar las semillas y mezclar todo, dejar reposar 15 minutos 
@@ -980,8 +1100,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Avena Snickers</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD5.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
             <li>
                  30g avena
@@ -1005,6 +1128,7 @@ Cilantro, Sal, Pimienta para condimentar
               150g yogurt
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	En una olla calentar la leche con la pizca de sal, agregar avena y cacao, dejar cocinar por 15 minutos, revolver ocasionalmente<br>
@@ -1019,8 +1143,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Avena con pasas y manzana</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD6.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  25g avena
@@ -1044,6 +1171,7 @@ Cilantro, Sal, Pimienta para condimentar
               75ml leche
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar la manzana en cubos, quitar las semillas y mezclar todo, dejar reposar 15 minutos 
@@ -1056,8 +1184,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Uvas con Yogurt</div>
       </div>
       <div class="app-content ">
-        <img src="RecetaX.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+            <div class="app-section">
+        <img src="RecetaM6.png" alt="Smiley face" height="200" width="300">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  150g uvas
@@ -1066,6 +1197,7 @@ Cilantro, Sal, Pimienta para condimentar
                   250g yogurt
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar las uvas por la mitad, mezclar con yogurt
@@ -1078,8 +1210,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Sopa de Batata con pollo picante</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta16.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  300g batata
@@ -1112,6 +1247,7 @@ Cilantro, Sal, Pimienta para condimentar
           Salsa picante, sal, pimienta para condimentar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Cortar en cubos la batata<br>
@@ -1130,8 +1266,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Banana con yogurt </div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD7.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  360g Yogurt
@@ -1143,6 +1282,7 @@ Cilantro, Sal, Pimienta para condimentar
               200ml agua
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
                      1)Cortar en rodajas las bananas<br>
@@ -1156,8 +1296,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Curry de pollo</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta17.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  30g arroz
@@ -1193,6 +1336,7 @@ Cilantro, Sal, Pimienta para condimentar
            Chili picante, sal, pimienta para sazonar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	En una olla cocinar el arroz, con 60ml agua, a fuego lento por 30 minutos o hasta que el agua se evapore<br>
@@ -1209,8 +1353,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Risotto de avena con huevo</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta18.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  40g avena
@@ -1237,6 +1384,7 @@ Cilantro, Sal, Pimienta para condimentar
               Sal y pimienta para condimentar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	En una olla poner 120ml de agua, agregar avena y una pizca de sal, cocinar a fuego lento por 10 minutos<br>
@@ -1252,8 +1400,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Batido de banana</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD8.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  300ml Leche
@@ -1268,6 +1419,7 @@ Cilantro, Sal, Pimienta para condimentar
               2  cucharadas de maní sin sal (opcional)
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Licuar todo, comer el maní aparte
@@ -1280,8 +1432,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Batido de banana</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD8.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  225ml Leche
@@ -1296,6 +1451,7 @@ Cilantro, Sal, Pimienta para condimentar
               1  cucharadas de maní sin sal (opcional)
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Licuar todo, comer el maní aparte
@@ -1308,8 +1464,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Chili Vegano</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="Receta19.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  50g arroz
@@ -1342,6 +1501,7 @@ Cilantro, Sal, Pimienta para condimentar
         Sal, pimienta para condimentar
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	En una olla cocinar arroz, dejar cocinando por 30 minutos o hasta que se evapore el agua<br>
@@ -1357,8 +1517,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Avena dulce con Yogurt</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD9.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  100g avena
@@ -1370,6 +1533,7 @@ Cilantro, Sal, Pimienta para condimentar
               4 cucharadas de miel
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Mezclar todos los ingredientes
@@ -1382,8 +1546,11 @@ Cilantro, Sal, Pimienta para condimentar
         <div class="app-title">Avena con naranja y manzana</div>
       </div>
       <div class="app-content ">
+            <div class="app-section">
         <img src="RecetaD10.png" alt="Smiley face" height="200" width="300">
-          <ul class="app-list">
+          </div>
+<div class="app-section">
+                        <ul class="app-list">
               <label>Ingredientes</label>
               <li>
                  40g avena
@@ -1407,6 +1574,7 @@ Cilantro, Sal, Pimienta para condimentar
               1 cucharada de miel
               </li>
           </ul>
+          </div>
                  <div class="app-section">
 					<b>Preparacion</b><br>
 1)	Pelar naranja, separar en gajos y cortar la manzana en cubos<br>
