@@ -64,17 +64,6 @@
 	position:relative;
 	top:1px;
 }
-        .div-wrapper {
-    position: relative;
-    height: 300px;
-    width: 300px;
-}
-
-.div-wrapper img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
         div{
             font-family: Font2;
             font-style: italic;
@@ -94,6 +83,16 @@
     width: 50%;
     padding: 10px;
 }
+        #butt{
+            box-shadow: 0 2px 5px #888888;
+  text-decoration: none;
+  font-size: 14px;
+            
+      text-align: center;
+  padding: 0 30px;
+  line-height: 30px;
+  border-radius: 20px;
+        }
 			@-webkit-keyframes pulse {
 				0% {
 					background-color: #CCC;
@@ -128,6 +127,9 @@
   min-width: 50%;
   min-height: 50%;
 }
+        #ocult{
+            
+        }
 			.scroll-page .loading {
 				margin: 12px auto;
 				border: 8px solid #AAA;
@@ -137,35 +139,51 @@
 				border-radius: 16px;
 				-webkit-animation: pulse 2s ease-in-out 0s infinite;
 			}
-        .frutas{
-            vertical-align: bottom;
-        }
+        body, html {
+    height: 100%;
+    margin: 0;
+}
+        .bg {
+    /* The image used */
+    background-image: url("Fondo.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     </style>
   </head>
 
   <body>
       
     <div class="app-page" data-page="home">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-title" id="titulo">Cocina.ME</div>
       </div>
       <div class="app-content">
           <div id="bg">
-  <img src="Fondo.png" alt="">
-</div>
-        <div class="app-section animated fadeInDown">
-            <div class="app-button"data-target="Almuerzo/cena">Almuerzo/cena</div>
+            <img src="Fondo.png" alt="">
+          </div>
+        <div class="app-section animated fadeInDown" id="butt">
+            <div class="app-button" data-target="Almuerzo/cena">Almuerzo/cena</div>
         </div>
-          <div class="app-section animated fadeInDown">
-            <div class="app-button" data-target="Desayuno/Merienda">Desayuno/Merienda</div>
+          <div class="app-section animated fadeInDown" id="butt">
+            <div class="app-button"  data-target="Desayuno/Merienda">Desayuno/Merienda</div>
         </div>
       
     <div class="app-page" data-page="Almuerzo/cena">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Almuerzo/cena</div>
       </div>
     <div class="app-content">
+        <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
              <div class="app-section animated fadeIn">
 				<ul class="app-list">
 					<label>(Proteínas, Recuperación, Crecimiento de Musculo)</label>
@@ -217,25 +235,31 @@
     </div>
         
            <div class="app-page" data-page="Desayuno/Merienda">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Desayuno/Merienda</div>
       </div>
       <div class="app-content ">
-     <div class="app-section fadeInDown">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
+     <div class="app-section fadeInDown" id="butt">
             <div class="app-button texto" data-target="Desayuno">Desayuno</div>
         </div>
-           <div class="app-section fadeInDown">
+           <div class="app-section fadeInDown" id="butt">
             <div class="app-button texto" data-target="Merienda">Merienda</div>
         </div>
       </div>
     </div>
            <div class="app-page" data-page="Desayuno">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Desayuno</div>
       </div>
     <div class="app-content">
+        <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
 				 <div class="app-section animated fadeIn">
                         <ul class="app-list">
 					<label>(Proteínas, Recuperación, Crecimiento de Musculo)</label>
@@ -283,11 +307,14 @@
 			</div>
     </div>
            <div class="app-page" data-page="Merienda">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Merienda</div>
       </div>
     <div class="app-content">
+        <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
 			<div class="app-section animated fadeIn">
                         <ul class="app-list">
 					<label>(Proteínas, Recuperación, Crecimiento de Musculo)</label>
@@ -319,11 +346,14 @@
 		</div>
         
     <div class="app-page " data-page="Receta1">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Huevo vegetariano en una sartén</div>
       </div>
       <div class="app-content">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta1.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -348,11 +378,14 @@
         </div>
 </div>
     <div class="app-page " data-page="Receta2">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Casserola de Coliflor y Broccoli</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta2.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -382,11 +415,14 @@
           
 </div>
     <div class="app-page " data-page="Receta3">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Casserola de Coliflor y Broccoli</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta3.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -415,11 +451,14 @@
       
 </div>
     <div class="app-page " data-page="Receta4">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Ricota con huevos revueltos </div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta4.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -443,11 +482,14 @@
 </div>
              </div>
     <div class="app-page " data-page="Receta5">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Carne con Zucchini crocante </div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta5.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -476,11 +518,14 @@
                </div>   
 </div>
     <div class="app-page " data-page="Receta6">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Ensalada de Poroto y Carne </div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta6.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -508,11 +553,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta7">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Pollo Caprese</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta7.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -537,11 +585,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta8">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Pollo picante con Brócoli</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta8.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -565,11 +616,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaD1">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Yogurt con manzana y nuez</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta9.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -588,11 +642,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaM1">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Yogurt con manzana y nuez</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta9.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -611,11 +668,14 @@
              </div>
 </div>    
     <div class="app-page " data-page="Receta10">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Pollo a la Mostaza Dijon y Naranja</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta10.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -654,11 +714,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta11">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Porotos con salsa cremosa</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta11.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -693,11 +756,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta12">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Pollo al limón con Hierbas</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta12.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -742,11 +808,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta13">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Carne con verduras asadas</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta13.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -789,11 +858,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaD2">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Yogurt con miel</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD2.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -818,11 +890,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaM2">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Yogurt con miel</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
                 <img src="RecetaD2.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -847,11 +922,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaM3">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Batido de proteínas de arándano</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaM3.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -879,11 +957,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaD3">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena con mantequilla de maní</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD3.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -918,11 +999,14 @@
              </div>
 </div>
     <div class="app-page " data-page="RecetaD4">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena con salsa de manzana</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD4.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -957,11 +1041,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta14">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Curry de Pollo con vegetales</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta14.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1009,11 +1096,14 @@
              </div>
 </div>
     <div class="app-page " data-page="Receta15">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Chili con carne</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta15.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1065,11 +1155,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaD5">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena Snickers</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD5.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1107,11 +1200,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaD6">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena con pasas y manzana</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD6.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1145,11 +1241,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>   
     <div class="app-page " data-page="RecetaM4">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena Snickers</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD5.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1188,11 +1287,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaM5">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena con pasas y manzana</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD6.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1229,11 +1331,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaM6">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Uvas con Yogurt</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaM6.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1255,11 +1360,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="Receta16">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Sopa de Batata con pollo picante</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta16.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1311,11 +1419,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaD7">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Banana con yogurt </div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD7.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1341,11 +1452,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>    
     <div class="app-page " data-page="Receta17">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Curry de pollo</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta17.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1398,11 +1512,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="Receta18">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Risotto de avena con huevo</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta18.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1445,11 +1562,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaD8">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Batido de banana</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD8.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1477,11 +1597,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaM7">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Batido de banana</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD8.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1509,11 +1632,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="Receta19">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Chili Vegano</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="Receta19.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1562,11 +1688,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaD9">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena dulce con Yogurt</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD9.png" alt="Smiley face" height="200" width="300">
           </div>
@@ -1591,11 +1720,14 @@ Cilantro, Sal, Pimienta para condimentar
              </div>
 </div>
     <div class="app-page " data-page="RecetaD10">
-      <div class="app-topbar">
+      <div class="app-topbar dark-blue">
         <div class="app-button left" data-back data-autotitle></div>
         <div class="app-title">Avena con naranja y manzana</div>
       </div>
       <div class="app-content ">
+          <div id="bg">
+            <img src="Fondo.png" alt="">
+          </div>
             <div class="app-section animated slideInLeft ">
         <img src="RecetaD10.png" alt="Smiley face" height="200" width="300">
           </div>
